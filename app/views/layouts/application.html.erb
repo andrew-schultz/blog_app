@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BlogApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+		<h1>Blog</h1>
+		<nav>
+			<ul>
+				<li>
+					<%= link_to "Log Out", '/log-out' %>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+<%= yield %>
+
+</body>
+</html>
